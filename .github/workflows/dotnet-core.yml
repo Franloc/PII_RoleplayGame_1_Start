@@ -1,25 +1,31 @@
-name: .NET Core
+name: Build & Test
 
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  build:
+  build-tests:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Configurando .Net 8...
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    - name: Instalando dependencias..
-      run: dotnet restore
-    - name: Compilando...
-      run: dotnet build --configuration Release --no-restore
-    - name: Ejecutando Tests...
-      run: dotnet test --no-restore --verbosity normal
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8.0
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Installing dependencies...
+        run: dotnet restore
+
+      - name: Building...
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Running test...
+        run: dotnet test --configuration Release --no-build
