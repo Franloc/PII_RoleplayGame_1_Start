@@ -1,15 +1,18 @@
-namespace LibraryTests;
+using NUnit.Framework;
 
-public class Tests
+namespace Ucu.Poo.RolePlayGame.Tests
 {
-    [SetUp]
-    public void Setup()
+    public class TestClass
     {
-    }
+        [SetUp]
+        public void Setup()
+        {
+        }
 
-    [Test]
-    public void Test1()
-    {
-        Assert.Pass();
+        [Test]
+        public void TestMethod()
+        {
+            Assert.Pass();
+        }
     }
 }
