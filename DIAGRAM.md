@@ -17,16 +17,12 @@ classDiagram
     Dwarf "1" --> "1" Shield : has
     Dwarf "1" --> "1" Helmet : has
 
-    %% Relaciones de Knight
-    Knight "1" --> "1" Sword : has
-    Knight "1" --> "1" Shield : has
-    Knight "1" --> "1" Armor : has
+    %% Relaciones de Elf
+    Elf "1" --> "1" Bow : has
+    Elf "1" --> "1" Armor : has
+    Elf "1" --> "1" Sword : has
 
-    %% Relaciones de Archer
-    Archer "1" --> "1" Bow : has
-    Archer "1" --> "1" Helmet : has
-
-    %% Relación de SpellsBook con Spell
+    %% RelaciÃ³n de SpellsBook con Spell
     SpellsBook "1" --> "*" Spell : contiene
 
     %% Clase Wizard
@@ -40,6 +36,9 @@ classDiagram
       +Wizard(string name)
       +ReceiveAttack(int power)
       +Cure()
+      +RemoveItem(string itemTypeName)
+      +ChangeStaff(Staff staff)
+      +ChangeSpellsBook(SpellsBook spellsBook)
     }
 
     %% Clase Dwarf
@@ -54,33 +53,28 @@ classDiagram
       +Dwarf(string name)
       +ReceiveAttack(int power)
       +Cure()
+      +RemoveItem(string itemTypeName)
+      +ChangeAxe(Axe axe)
+      +ChangeShield(Shield shield)
+      +ChangeHelmet(Helmet helmet)
     }
 
-    %% Clase Knight
-    class Knight{
+    %% Clase Elf
+    class Elf{
       +string Name
+      +Bow Bow
       +Sword Sword
-      +Shield Shield
       +Armor Armor
       +int AttackValue
       +int DefenseValue
       +int Health
-      +Knight(string name)
+      +Elf(string name)
       +ReceiveAttack(int power)
       +Cure()
-    }
-
-    %% Clase Archer
-    class Archer{
-      +string Name
-      +Bow Bow
-      +Helmet Helmet
-      +int AttackValue
-      +int DefenseValue
-      +int Health
-      +Archer(string name)
-      +ReceiveAttack(int power)
-      +Cure()
+      +RemoveItem(string itemTypeName)
+      +ChangeBow(Bow bow)
+      +ChangeArmor(Armor armor)
+      +ChangeSword(Sword sword)
     }
 
     %% Clase SpellsBook
