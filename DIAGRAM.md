@@ -27,12 +27,12 @@ classDiagram
 
     %% Clase Wizard
     class Wizard{
-      +string Name
-      +SpellsBook SpellsBook
-      +Staff Staff
-      +int AttackValue
-      +int DefenseValue
-      +int Health
+      -string Name
+      -SpellsBook SpellsBook
+      -Staff Staff
+      -int AttackValue
+      -int DefenseValue
+      -int Health
       +Wizard(string name)
       +ReceiveAttack(int power)
       +Cure()
@@ -43,13 +43,13 @@ classDiagram
 
     %% Clase Dwarf
     class Dwarf{
-      +string Name
-      +Axe Axe
-      +Shield Shield
-      +Helmet Helmet
-      +int AttackValue
-      +int DefenseValue
-      +int Health
+      -string Name
+      -Axe Axe
+      -Shield Shield
+      -Helmet Helmet
+      -int AttackValue
+      -int DefenseValue
+      -int Health
       +Dwarf(string name)
       +ReceiveAttack(int power)
       +Cure()
@@ -61,13 +61,13 @@ classDiagram
 
     %% Clase Elf
     class Elf{
-      +string Name
-      +Bow Bow
-      +Sword Sword
-      +Armor Armor
-      +int AttackValue
-      +int DefenseValue
-      +int Health
+      -string Name
+      -Bow Bow
+      -Sword Sword
+      -Armor Armor
+      -int AttackValue
+      -int DefenseValue
+      -int Health
       +Elf(string name)
       +ReceiveAttack(int power)
       +Cure()
