@@ -80,44 +80,44 @@ classDiagram
     %% Clase SpellsBook
     class SpellsBook{
       ICollection<Spell> Spells
-      +int AttackValue
-      +int DefenseValue
+      -int AttackValue
+      -int DefenseValue
     }
 
     %% Clase Spell
     class Spell{
-      +int AttackValue
-      +int DefenseValue
+      -int AttackValue
+      -int DefenseValue
     }
 
     %% Armas
     class Axe{
-      +int AttackValue
+      -int AttackValue
     }
 
     class Sword{
-      +int AttackValue
+      -int AttackValue
     }
 
     class Bow{
-      +int AttackValue
+      -int AttackValue
     }
 
     class Staff{
-      +int AttackValue
-      +int DefenseValue
+      -int AttackValue
+      -int DefenseValue
     }
 
     %% Defensas
     class Shield{
-      +int DefenseValue
+      -int DefenseValue
     }
 
     class Armor{
-      +int DefenseValue
+      -int DefenseValue
     }
 
     class Helmet{
-      +int DefenseValue
+      -int DefenseValue
     }
 ```
