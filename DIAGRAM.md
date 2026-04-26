@@ -35,7 +35,7 @@ classDiagram
       -int Health
       +Wizard(string name, int WHealth, int AV, int DV)
       +ReceiveAttack(int power)
-      +Cure(int additionalHealth)
+      +Cure()
       +RemoveStaff()
       +RemoveSpellsBook()
     }
@@ -51,7 +51,7 @@ classDiagram
       -int Health
       +Dwarf(string DName, int DHealth, int AV, int DV)
       +ReceiveAttack(int power)
-      +Cure(int additionalHealth)
+      +Cure()
       +RemoveAxe()
       +RemoveShield()
       +RemoveHelmet()
@@ -68,7 +68,7 @@ classDiagram
       -int Health
       +Elf(string EName, int EHealth, int Av, int DV)
       +ReceiveAttack(int power)
-      +Cure(int additionalHealth)
+      +Cure()
       +RemoveBow()
       +RemoveSword()
       +RemoveArmor()
