@@ -32,16 +32,23 @@ public class Elf
     }
 
     //Stats
-    private int health;
+    private int baseHealth; //Vida base, se usa cuando se quiere restaurar la vida del personaje
+    public int BaseHealth
+    {
+        get {return this.baseHealth;} set {this.baseHealth = value;}
+    }
+    private int health; //Vida Real del personaje
     public int Health
     {
         get {return this.health;} set {this.health = value;}
     }
+    
     private int attackValue;
     public int AttackValue
     {
         get {return this.attackValue;} set {this.attackValue = value;}
     }
+    
     private int defenseValue;
     public int DefenseValue
     {
@@ -49,6 +56,24 @@ public class Elf
     }
     
     //Metodos
+
+    //Recibir attaque y calcular nuevo valor de vida
+    public ReceiveAttack(int power)
+    {
+        damage = power - this.DefenseValue
+        if damage > 0
+        {
+            this.Health -= damage;
+        }
+    }
+
+    //Curar al personaje
+    public void Cure()
+    {
+        this.Health = this.BaseHealth;
+    }
+
+    //Eliminar Items
     public void EliminarSword()
     {
         this.Sword = null;
