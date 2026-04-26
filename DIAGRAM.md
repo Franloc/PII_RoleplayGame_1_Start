@@ -51,7 +51,7 @@ classDiagram
       -int Health
       +Dwarf(string DName, int DHealth, int AV, int DV)
       +ReceiveAttack(int power)
-      +Cure(additionalHealth)
+      +Cure(int additionalHealth)
       +RemoveAxe()
       +RemoveShield()
       +RemoveHelmet()
@@ -68,7 +68,7 @@ classDiagram
       -int Health
       +Elf(string EName, int EHealth, int Av, int DV)
       +ReceiveAttack(int power)
-      +Cure(additionalHealth)
+      +Cure(int additionalHealth)
       +RemoveBow()
       +RemoveSword()
       +RemoveArmor()
