@@ -32,6 +32,11 @@ public class Elf
     }
 
     //Stats
+    private int health;
+    public int Health
+    {
+        get {return this.health;} set {this.health = value;}
+    }
     private int attackValue;
     public int AttackValue
     {
@@ -42,15 +47,14 @@ public class Elf
     {
         get {return this.defenseValue;} set {this.defenseValue = value;}
     }
-    private int health;
-    public int Health
-    {
-        get {return this.health;} set {this.health = value;}
-    }
+
 
     //Constructor
-    public Elf()
+    public Elf(EName, EHealth, AV, DV)
     {
-        ;
+        this.name = EName;
+        this.health = EHealth;
+        this.attackValue = AV;
+        this.defenseValue = DV;
     }
 }
