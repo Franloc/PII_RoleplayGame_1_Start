@@ -8,15 +8,10 @@ class Dwarf
     private string name;
     public string Name
     {
-        get {return this.name;} set {this.name = value;}
+        get {return this.name;} set {this.name=value;}
     }
 
     //Equipment
-    private string name;
-    public string Name
-    {
-        get {return this.name;} set {this.name=value;}
-    }
     private Axe axe;
     public Axe Axe
     {
