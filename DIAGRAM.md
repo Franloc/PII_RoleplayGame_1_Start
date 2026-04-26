@@ -30,9 +30,10 @@ classDiagram
       -string Name
       -SpellsBook SpellsBook
       -Staff Staff
+      -int BaseHealth
+      -int Health
       -int AttackValue
       -int DefenseValue
-      -int Health
       +Wizard(string WizardName, int basehp, int AV, int DV)
       +ReceiveAttack(int power)
       +Cure()
