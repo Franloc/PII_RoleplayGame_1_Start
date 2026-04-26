@@ -33,12 +33,11 @@ classDiagram
       -int AttackValue
       -int DefenseValue
       -int Health
-      +Wizard(string name)
+      +Wizard(string name, int WHealth, int AV, int DV)
       +ReceiveAttack(int power)
-      +Cure()
-      +RemoveItem(string itemTypeName)
-      +ChangeStaff(Staff staff)
-      +ChangeSpellsBook(SpellsBook spellsBook)
+      +Cure(int additionalHealth)
+      +RemoveStaff()
+      +RemoveSpellsBook()
     }
 
     %% Clase Dwarf
@@ -50,13 +49,12 @@ classDiagram
       -int AttackValue
       -int DefenseValue
       -int Health
-      +Dwarf(string name)
+      +Dwarf(string DName, int DHealth, int AV, int DV)
       +ReceiveAttack(int power)
-      +Cure()
-      +RemoveItem(string itemTypeName)
-      +ChangeAxe(Axe axe)
-      +ChangeShield(Shield shield)
-      +ChangeHelmet(Helmet helmet)
+      +Cure(additionalHealth)
+      +RemoveAxe()
+      +RemoveShield()
+      +RemoveHelmet()
     }
 
     %% Clase Elf
@@ -68,13 +66,12 @@ classDiagram
       -int AttackValue
       -int DefenseValue
       -int Health
-      +Elf(string name)
+      +Elf(string EName, int EHealth, int Av, int DV)
       +ReceiveAttack(int power)
-      +Cure()
-      +RemoveItem(string itemTypeName)
-      +ChangeBow(Bow bow)
-      +ChangeArmor(Armor armor)
-      +ChangeSword(Sword sword)
+      +Cure(additionalHealth)
+      +RemoveBow()
+      +RemoveSword()
+      +RemoveArmor()
     }
 
     %% Clase SpellsBook
