@@ -74,14 +74,14 @@ public class Elf
     }
 
     //Obtener Valores totales de Ataque y Defensa
-    public GetTotalAttack()
+    public int GetTotalAttack()
     {
         int ataqueTotal;
         ataqueTotal += this.AttackValue;
         ataqueTotal += this.Bow.AttackValue + this.Sword.AttackValue + this.Armor.AttackValue
         return ataqueTotal;
     }
-    public GetTotalDefense()
+    public int GetTotalDefense()
     {
         int defensaTotal;
         defensaTotal += this.DefenseValue;
