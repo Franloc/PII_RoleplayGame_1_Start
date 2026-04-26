@@ -4,7 +4,7 @@ class Dwarf
 {
     // Atributos de Dwarf
 
-    //Nombre del personaje
+    //Equipment
     private string name;
     public string Name
     {
