@@ -32,6 +32,11 @@ public class Elf
     }
 
     //Stats
+    private int health;
+    public int Health
+    {
+        get {return this.health;} set {this.health = value;}
+    }
     private int attackValue;
     public int AttackValue
     {
@@ -42,14 +47,27 @@ public class Elf
     {
         get {return this.defenseValue;} set {this.defenseValue = value;}
     }
-    private int health;
-    public int Health
+    
+    //Metodos
+    public void EliminarSword()
     {
-        get {return this.health;} set {this.health = value;}
+        this.Sword = null;
     }
-    //Constructor
-    public Elf()
+    public void EliminarBow()
     {
-        ;
+        this.Bow = null;
+    }
+    public void EliminarArmor()
+    {
+        this.Armor = null;
+    }
+    
+    //Constructor
+    public Elf(EName, EHealth, AV, DV)
+    {
+        this.name = EName;
+        this.health = EHealth;
+        this.attackValue = AV;
+        this.defenseValue = DV;
     }
 }
