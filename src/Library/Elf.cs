@@ -61,7 +61,7 @@ public class Elf
     public void ReceiveAttack(int power)
     {
         damage = power - this.DefenseValue //El daño recibido se le descuenta el valor de defensa, por lo que si la defensa es mayor no se recibe daño.
-        if damage > 0
+        if (damage > 0)
         {
             this.Health -= damage;
         }
@@ -91,7 +91,7 @@ public class Elf
         if (this.Bow != null){defensaTotal += this.Bow.DefenseValue;}
         if (this.Sword != null){defensaTotal += this.Sword.DefenseValue;}
         if (this.Armor != null){defensaTotal += this.Armor.DefenseValue;}
-        return ataqueTotal;
+        return defensaTotal;
     }
     
     //Eliminar Items
