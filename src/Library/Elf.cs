@@ -63,7 +63,7 @@ public class Elf
     }
     
     //Constructor
-    public Elf(EName, EHealth, AV, DV)
+    public Elf(string EName, int EHealth, int AV, int DV)
     {
         this.name = EName;
         this.health = EHealth;
