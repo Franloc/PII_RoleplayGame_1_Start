@@ -36,6 +36,8 @@ classDiagram
       +Wizard(string name, int WHealth, int AV, int DV)
       +ReceiveAttack(int power)
       +Cure()
+      +GetTotalAttack()
+      +GetTotalDefense()
       +RemoveStaff()
       +RemoveSpellsBook()
     }
@@ -52,6 +54,8 @@ classDiagram
       +Dwarf(string DName, int DHealth, int AV, int DV)
       +ReceiveAttack(int power)
       +Cure()
+      +GetTotalAttack()
+      +GetTotalDefense()
       +RemoveAxe()
       +RemoveShield()
       +RemoveHelmet()
@@ -69,8 +73,8 @@ classDiagram
       +Elf(string EName, int EHealth, int Av, int DV)
       +ReceiveAttack(int power)
       +Cure()
-      +GetTotalAttack
-      +GetTotalDefense
+      +GetTotalAttack()
+      +GetTotalDefense()
       +RemoveBow()
       +RemoveSword()
       +RemoveArmor()
