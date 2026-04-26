@@ -4,6 +4,7 @@ using System.Diagnostics;
 public class Elf
 {
     //Atributos
+    
     //Nombre del personaje
     private string name;
     public string Name
@@ -46,9 +47,6 @@ public class Elf
     {
         get {return this.health;} set {this.health = value;}
     }
-
-
-
 
     //Constructor
     public Elf()
