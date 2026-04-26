@@ -52,7 +52,7 @@ classDiagram
       -int Health
       -int AttackValue
       -int DefenseValue
-      +Dwarf(string DName, int Dbasehp, int AV, int DV)
+      +Dwarf(string DwarfName, int basehp, int AV, int DV)
       +ReceiveAttack(int incomingDMG)
       +Cure()
       +GetTotalAttack()
@@ -72,7 +72,7 @@ classDiagram
       -int DefenseValue
       -int Health
       +Elf(string ElfName, int basehp, int Av, int DV)
-      +ReceiveAttack(int power)
+      +ReceiveAttack(int incomingDamage)
       +Cure()
       +GetTotalAttack()
       +GetTotalDefense()
