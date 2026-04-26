@@ -78,7 +78,9 @@ public class Elf
     {
         int ataqueTotal;
         ataqueTotal += this.AttackValue;
-        ataqueTotal += this.Bow.AttackValue + this.Sword.AttackValue + this.Armor.AttackValue
+        if (this.Bow != null){ataqueTotal += this.Bow.AttackValue;}
+        if (this.Sword != null){ataqueTotal += this.Sword.AttackValue;}
+        if (this.Armor != null){ataqueTotal += this.Armor.AttackValue;}
         return ataqueTotal;
     }
     public int GetTotalDefense()
