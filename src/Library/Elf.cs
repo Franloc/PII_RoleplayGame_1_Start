@@ -108,6 +108,7 @@ public class Elf
     {
         this.name = EName;
         this.health = EHealth;
+        this.baseHealth = EHealth;
         this.attackValue = AV;
         this.defenseValue = DV;
     }
