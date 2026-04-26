@@ -60,7 +60,7 @@ public class Elf
     //Recibir attaque y calcular nuevo valor de vida
     public ReceiveAttack(int power)
     {
-        damage = power - this.DefenseValue
+        damage = power - this.DefenseValue //El daño recibido se le descuenta el valor de defensa, por lo que si la defensa es mayor no se recibe daño.
         if damage > 0
         {
             this.Health -= damage;
