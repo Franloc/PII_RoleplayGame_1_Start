@@ -46,10 +46,6 @@ public class Elf
     {
         get {return this.health;} set {this.health = value;}
     }
-
-
-
-
     //Constructor
     public Elf()
     {
