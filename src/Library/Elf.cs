@@ -47,8 +47,21 @@ public class Elf
     {
         get {return this.defenseValue;} set {this.defenseValue = value;}
     }
-
-
+    
+    //Metodos
+    public void EliminarSword()
+    {
+        this.Sword = null;
+    }
+    public void EliminarBow()
+    {
+        this.Bow = null;
+    }
+    public void EliminarArmor()
+    {
+        this.Armor = null;
+    }
+    
     //Constructor
     public Elf(EName, EHealth, AV, DV)
     {
