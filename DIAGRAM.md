@@ -120,6 +120,7 @@ classDiagram
     }
 
     class Helmet{
+      -int AttackValue
       -int DefenseValue
     }
 ```
