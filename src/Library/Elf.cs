@@ -112,11 +112,11 @@ public class Elf
     }
     
     //Constructor
-    public Elf(string EName, int EHealth, int AV, int DV)
+    public Elf(string ElfName, int basehp, int AV, int DV)
     {
-        this.name = EName;
-        this.health = EHealth;
-        this.baseHealth = EHealth;
+        this.name = ElfName;
+        this.health = basehp;
+        this.baseHealth = basehp;
         this.attackValue = AV;
         this.defenseValue = DV;
     }
