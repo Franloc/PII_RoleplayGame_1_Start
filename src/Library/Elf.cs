@@ -60,7 +60,7 @@ public class Elf
     //Recibir attaque y calcular nuevo valor de vida
     public void ReceiveAttack(int power)
     {
-        damage = power - this.DefenseValue //El daño recibido se le descuenta el valor de defensa, por lo que si la defensa es mayor no se recibe daño.
+        int damage = power - this.DefenseValue //El daño recibido se le descuenta el valor de defensa, por lo que si la defensa es mayor no se recibe daño.
         if (damage > 0)
         {
             this.Health -= damage;
@@ -77,7 +77,7 @@ public class Elf
     //Suma la stat del personaje y la de los items, a su vez chequea que existan tales items para evitar errores.
     public int GetTotalAttack()
     {
-        int ataqueTotal;
+        int ataqueTotal = 0;
         ataqueTotal += this.AttackValue;
         if (this.Bow != null){ataqueTotal += this.Bow.AttackValue;}
         if (this.Sword != null){ataqueTotal += this.Sword.AttackValue;}
@@ -86,7 +86,7 @@ public class Elf
     }
     public int GetTotalDefense()
     {
-        int defensaTotal;
+        int defensaTotal = 0;
         defensaTotal += this.DefenseValue;
         if (this.Bow != null){defensaTotal += this.Bow.DefenseValue;}
         if (this.Sword != null){defensaTotal += this.Sword.DefenseValue;}
