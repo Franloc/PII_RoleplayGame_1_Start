@@ -68,9 +68,10 @@ classDiagram
       -Bow Bow
       -Sword Sword
       -Armor Armor
+      -int BaseHealth
+      -int Health
       -int AttackValue
       -int DefenseValue
-      -int Health
       +Elf(string ElfName, int basehp, int Av, int DV)
       +ReceiveAttack(int incomingDamage)
       +Cure()
