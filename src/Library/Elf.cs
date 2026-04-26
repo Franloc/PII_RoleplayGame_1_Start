@@ -74,6 +74,7 @@ public class Elf
     }
 
     //Obtener Valores totales de Ataque y Defensa
+    //Suma la stat del personaje y la de los items, a su vez chequea que existan tales items para evitar errores.
     public int GetTotalAttack()
     {
         int ataqueTotal;
@@ -87,7 +88,9 @@ public class Elf
     {
         int defensaTotal;
         defensaTotal += this.DefenseValue;
-        defensaTotal += this.Bow.DefenseValue + this.Sword.DefenseValue + this.Armor.DefenseValue
+        if (this.Bow != null){defensaTotal += this.Bow.DefenseValue;}
+        if (this.Sword != null){defensaTotal += this.Sword.DefenseValue;}
+        if (this.Armor != null){defensaTotal += this.Armor.DefenseValue;}
         return ataqueTotal;
     }
     
