@@ -48,11 +48,12 @@ classDiagram
       -Axe Axe
       -Shield Shield
       -Helmet Helmet
+      -int BaseHealth
+      -int Health
       -int AttackValue
       -int DefenseValue
-      -int Health
-      +Dwarf(string DName, int DHealth, int AV, int DV)
-      +ReceiveAttack(int power)
+      +Dwarf(string DName, int Dbasehp, int AV, int DV)
+      +ReceiveAttack(int incomingDMG)
       +Cure()
       +GetTotalAttack()
       +GetTotalDefense()

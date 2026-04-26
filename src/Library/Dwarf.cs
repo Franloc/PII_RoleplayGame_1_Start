@@ -51,15 +51,15 @@ class Dwarf
         get {return this.defenseValue;} set {this.defenseValue=value;}
     }
     //Métodos
-    public void EliminarAxe()
+    public void RemoveAxe()
     {
         this.Axe = null;
     }
-    public void EliminarShield()
+    public void RemoveShield()
     {
         this.Shield = null;
     }
-    public void EliminarHelmet()
+    public void RemoveHelmet()
     {
         this.Helmet = null;
     }
@@ -94,12 +94,12 @@ class Dwarf
         this.Health=this.BaseHealth; // Curarse es retaurar la vida actual a la vida base (vida completa)
     }
     //Constructor
-    public Dwarf(string name, int basehp, int ap, int dp)
+    public Dwarf(string Dname, int basehp, int AV, int DV)
     {
-        this.Name=name;
+        this.Name=Dname;
         this.BaseHealth=basehp; //base health point (no se modifica)
         this.Health=basehp; // Health modificable para el método ReceiveAttack
-        this.AttackValue=ap; // Attack points
-        this.DefenseValue=dp; // Defense points
+        this.AttackValue=AV; // Attack points
+        this.DefenseValue=DV; // Defense points
     }
 }
