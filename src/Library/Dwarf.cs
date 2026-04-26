@@ -3,6 +3,8 @@ using System;
 class Dwarf
 {
     // Atributos de Dwarf
+
+    //Equipment
     private string name;
     public string Name
     {
@@ -23,6 +25,13 @@ class Dwarf
     {
         get {return this.helmet;} set {this.helmet=value;}
     }
+
+    //Stats
+    private int health;
+    public int Health
+    {
+        get {return this.health;} set {this.health=value;}
+    }
     private int attackValue;
     public int AttackValue
     {
@@ -33,11 +42,9 @@ class Dwarf
     {
         get {return this.defenseValue;} set {this.defenseValue=value;}
     }
-    private int health;
-    public int Health
-    {
-        get {return this.health;} set {this.health=value;}
-    }
+
+
+    //Constructor
     public Dwarf(string name)
     {
         this.Name=name;
