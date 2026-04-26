@@ -4,6 +4,13 @@ class Dwarf
 {
     // Atributos de Dwarf
 
+    //Nombre del personaje
+    private string name;
+    public string Name
+    {
+        get {return this.name;} set {this.name = value;}
+    }
+
     //Equipment
     private string name;
     public string Name
