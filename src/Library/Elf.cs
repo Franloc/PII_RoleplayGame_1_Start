@@ -13,6 +13,9 @@ public class Elf
     }
 
     //Equipment
+    //El motodo "set" actua como funcion que asigna un item en caso de no tener un item previo,
+    //pero tambien actua como "cambiar item" porque sin importar lo que tenga el personaje anteriormente
+    //la variable se limpia y se le asigna un nuevo valor.
     private Bow bow;
     public Bow Bow
     {
