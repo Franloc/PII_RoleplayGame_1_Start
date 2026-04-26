@@ -69,6 +69,8 @@ classDiagram
       +Elf(string EName, int EHealth, int Av, int DV)
       +ReceiveAttack(int power)
       +Cure()
+      +GetTotalAttack
+      +GetTotalDefense
       +RemoveBow()
       +RemoveSword()
       +RemoveArmor()
