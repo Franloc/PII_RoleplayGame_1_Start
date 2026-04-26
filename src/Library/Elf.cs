@@ -61,9 +61,9 @@ public class Elf
     //Metodos
 
     //Recibir attaque y calcular nuevo valor de vida
-    public void ReceiveAttack(int power)
+    public void ReceiveAttack(int incomingDamage)
     {
-        int damage = power - this.GetTotalDefense() //El daño recibido se le descuenta el valor de defensa, por lo que si la defensa es mayor no se recibe daño.
+        int damage = incomingDamage - this.GetTotalDefense() //El daño recibido se le descuenta el valor de defensa, por lo que si la defensa es mayor no se recibe daño.
         if (damage > 0)
         {
             this.Health -= damage;
@@ -98,25 +98,25 @@ public class Elf
     }
     
     //Eliminar Items
-    public void EliminarSword()
+    public void RemoveSword()
     {
         this.Sword = null;
     }
-    public void EliminarBow()
+    public void RemoveBow()
     {
         this.Bow = null;
     }
-    public void EliminarArmor()
+    public void RemoveArmor()
     {
         this.Armor = null;
     }
     
     //Constructor
-    public Elf(string EName, int EHealth, int AV, int DV)
+    public Elf(string ElfName, int basehp, int AV, int DV)
     {
-        this.name = EName;
-        this.health = EHealth;
-        this.baseHealth = EHealth;
+        this.name = ElfName;
+        this.health = basehp;
+        this.baseHealth = basehp;
         this.attackValue = AV;
         this.defenseValue = DV;
     }
