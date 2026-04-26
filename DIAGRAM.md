@@ -90,14 +90,17 @@ classDiagram
     %% Armas
     class Axe{
       -int AttackValue
+      -int DefenseValue
     }
 
     class Sword{
       -int AttackValue
+      -int DefenseValue
     }
 
     class Bow{
       -int AttackValue
+      -int DefenseValue
     }
 
     class Staff{
@@ -107,10 +110,12 @@ classDiagram
 
     %% Defensas
     class Shield{
+      -int AttackValue
       -int DefenseValue
     }
 
     class Armor{
+      -int AttackValue
       -int DefenseValue
     }
 
