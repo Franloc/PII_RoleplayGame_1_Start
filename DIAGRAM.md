@@ -51,7 +51,7 @@ classDiagram
       -int Health
       +Dwarf(string DName, int DHealth, int AV, int DV)
       +ReceiveAttack(int power)
-      +Cure(additionalHealth)
+      +Cure(int additionalHealth)
       +RemoveAxe()
       +RemoveShield()
       +RemoveHelmet()
@@ -68,7 +68,7 @@ classDiagram
       -int Health
       +Elf(string EName, int EHealth, int Av, int DV)
       +ReceiveAttack(int power)
-      +Cure(additionalHealth)
+      +Cure(int additionalHealth)
       +RemoveBow()
       +RemoveSword()
       +RemoveArmor()
@@ -90,14 +90,17 @@ classDiagram
     %% Armas
     class Axe{
       -int AttackValue
+      -int DefenseValue
     }
 
     class Sword{
       -int AttackValue
+      -int DefenseValue
     }
 
     class Bow{
       -int AttackValue
+      -int DefenseValue
     }
 
     class Staff{
@@ -107,14 +110,17 @@ classDiagram
 
     %% Defensas
     class Shield{
+      -int AttackValue
       -int DefenseValue
     }
 
     class Armor{
+      -int AttackValue
       -int DefenseValue
     }
 
     class Helmet{
+      -int AttackValue
       -int DefenseValue
     }
 ```
