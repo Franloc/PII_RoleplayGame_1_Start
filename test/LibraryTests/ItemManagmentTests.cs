@@ -26,7 +26,7 @@ namespace Ucu.Poo.RolePlayGame.Tests
             Helmet cascon = new Helmet(0, 67);
             enano.Helmet = cascon;
 
-            Assert.That(cascon, Is.EqualTo(elfo.Bow));
+            Assert.That(cascon, Is.EqualTo(enano.Helmet));
             enano.RemoveHelmet();
             Assert.That(null, Is.EqualTo(enano.Helmet));
             Assert.That(null, Is.EqualTo(enano.Axe));
