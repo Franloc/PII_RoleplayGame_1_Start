@@ -30,15 +30,17 @@ classDiagram
       -string Name
       -SpellsBook SpellsBook
       -Staff Staff
+      -int BaseHealth
+      -int Health
       -int AttackValue
       -int DefenseValue
-      -int Health
-      +Wizard(string name)
-      +ReceiveAttack(int power)
+      +Wizard(string WizardName, int basehp, int AV, int DV)
+      +ReceiveAttack(int incomingDamage)
       +Cure()
-      +RemoveItem(string itemTypeName)
-      +ChangeStaff(Staff staff)
-      +ChangeSpellsBook(SpellsBook spellsBook)
+      +GetTotalAttack()
+      +GetTotalDefense()
+      +RemoveStaff()
+      +RemoveSpellsBook()
     }
 
     %% Clase Dwarf
@@ -47,16 +49,18 @@ classDiagram
       -Axe Axe
       -Shield Shield
       -Helmet Helmet
+      -int BaseHealth
+      -int Health
       -int AttackValue
       -int DefenseValue
-      -int Health
-      +Dwarf(string name)
-      +ReceiveAttack(int power)
+      +Dwarf(string DwarfName, int basehp, int AV, int DV)
+      +ReceiveAttack(int incomingDMG)
       +Cure()
-      +RemoveItem(string itemTypeName)
-      +ChangeAxe(Axe axe)
-      +ChangeShield(Shield shield)
-      +ChangeHelmet(Helmet helmet)
+      +GetTotalAttack()
+      +GetTotalDefense()
+      +RemoveAxe()
+      +RemoveShield()
+      +RemoveHelmet()
     }
 
     %% Clase Elf
@@ -65,16 +69,18 @@ classDiagram
       -Bow Bow
       -Sword Sword
       -Armor Armor
+      -int BaseHealth
+      -int Health
       -int AttackValue
       -int DefenseValue
-      -int Health
-      +Elf(string name)
-      +ReceiveAttack(int power)
+      +Elf(string ElfName, int basehp, int Av, int DV)
+      +ReceiveAttack(int incomingDamage)
       +Cure()
-      +RemoveItem(string itemTypeName)
-      +ChangeBow(Bow bow)
-      +ChangeArmor(Armor armor)
-      +ChangeSword(Sword sword)
+      +GetTotalAttack()
+      +GetTotalDefense()
+      +RemoveBow()
+      +RemoveSword()
+      +RemoveArmor()
     }
 
     %% Clase SpellsBook
@@ -93,14 +99,17 @@ classDiagram
     %% Armas
     class Axe{
       -int AttackValue
+      -int DefenseValue
     }
 
     class Sword{
       -int AttackValue
+      -int DefenseValue
     }
 
     class Bow{
       -int AttackValue
+      -int DefenseValue
     }
 
     class Staff{
@@ -110,14 +119,17 @@ classDiagram
 
     %% Defensas
     class Shield{
+      -int AttackValue
       -int DefenseValue
     }
 
     class Armor{
+      -int AttackValue
       -int DefenseValue
     }
 
     class Helmet{
+      -int AttackValue
       -int DefenseValue
     }
 ```

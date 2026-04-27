@@ -1,3 +1,5 @@
+namespace Ucu.Poo.RolePlayGame
+{
 public class Helmet
 {
     //Valor de ataque del helmet
@@ -18,4 +20,5 @@ public class Helmet
         this.AttackValue=attackValue;
         this.DefenseValue=defenseValue;
     }
+}
 }

@@ -1,3 +1,6 @@
+
+namespace Ucu.Poo.RolePlayGame
+{
 public class Armor
 {
     //Atributos
@@ -20,4 +23,5 @@ public class Armor
         this.defenseValue = DV;
         this.defenseValue = DV;
     }
+}
 }
