@@ -52,12 +52,12 @@ public class Wizard
     }
 
     //Métodos
-    public void EliminarStaff()
+    public void RemoveStaff()
     {
         this.Staff = null;
     }
 
-    public void EliminarSpellBook()
+    public void RemoveSpellBook()
     {
         this.SpellBook = null;
     }
