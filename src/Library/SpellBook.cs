@@ -24,8 +24,8 @@ public class SpellBook
             return total;
         }
     }
-
-    // Defensa
+    //Def
+    private int defenseValue;
     public int DefenseValue
     {
         get { return this.defenseValue; } set { this.defenseValue = value;}
