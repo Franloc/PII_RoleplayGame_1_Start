@@ -4,7 +4,7 @@ namespace Ucu.Poo.RolePlayGame
 {
 public class SpellBook
 {
-    // Lista de hechizos
+    //Lista de hechizos
     private List<Spell> spells = new List<Spell>();
     public List<Spell> Spells
     {
@@ -25,7 +25,7 @@ public class SpellBook
         }
     }
 
-    // Defensa (puede ser 0)
+    // Defensa
     public int DefenseValue
     {
         get { return 0; }
