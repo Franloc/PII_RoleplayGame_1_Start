@@ -15,10 +15,10 @@ namespace Ucu.Poo.RolePlayGame.Tests
             Elf elfo = new Elf("Elden", 100, 20, 10);
             Bow arco = new Bow(5, 0);
             elfo.Bow = arco;
-            Assert.AreEquals(arco, elfo.Bow);
+            Assert.AreEqual(arco, elfo.Bow);
             elfo.RemoveBow();
-            Assert.AreEquals(null, elfo.Bow);
-            Assert.AreEquals(elfo.Sword, null);
+            Assert.AreEqual(null, elfo.Bow);
+            Assert.AreEqual(elfo.Sword, null);
         }
     }
 }
