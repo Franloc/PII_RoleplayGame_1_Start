@@ -1,6 +1,6 @@
 namespace Ucu.Poo.RolePlayGame
 {
-class Dwarf
+public class Dwarf
 {
     // Atributos de Dwarf
 
