@@ -1,18 +1,20 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using Ucu.Poo.RolePlayGame;
 
-[TestClass]
 public class SpellBookTests
 {
-    [TestMethod]
-    public void AttackValue_WithSpells_ReturnsCorrectSum()
+    [Test]
+    public void TestAttackValue_WithSpells_ReturnsSum()
     {
-        SpellBook book = new SpellBook(0);
-        book.Spells.Add(new Spell(10));
-        book.Spells.Add(new Spell(20));
+        //Crear libro y sus hechizos 
+        SpellBook libro = new SpellBook(0);
+        Spell hechizo1 = new Spell(10);
+        Spell hechizo2 = new Spell(20);
 
-        int result = book.AttackValue;
+        //Agregar hechizos
+        libro.Spells.Add(hechizo1);
+        libro.Spells.Add(hechizo2);
 
-        Assert.AreEqual(30, result);
+        //Verificar suma de ataque
+        Assert.AreEqual(30, libro.AttackValue);
     }
-}

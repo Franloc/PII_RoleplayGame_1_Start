@@ -11,7 +11,7 @@ public class SpellBook
         get { return spells; } set { this.spells = value; }
     }
 
-    //Valor de ataque
+    // Valor de ataque
     public int AttackValue
     {
         get
