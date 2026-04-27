@@ -1,5 +1,7 @@
 using System;
 
+namespace Ucu.Poo.RolePlayGame
+{
 class Wizard
 {
     // Atributos de Wizard
@@ -101,4 +103,5 @@ class Wizard
         this.AttackValue=ap;
         this.DefenseValue=dp;
     }
+}
 }

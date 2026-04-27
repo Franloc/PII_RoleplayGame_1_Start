@@ -1,3 +1,5 @@
+namespace Ucu.Poo.RolePlayGame
+{
 public class Shield
 {
     //Valor de ataque del shield
@@ -18,4 +20,5 @@ public class Shield
         this.AttackValue=attackValue;
         this.DefenseValue=defenseValue;
     }
+}
 }

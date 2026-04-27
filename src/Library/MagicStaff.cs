@@ -1,3 +1,5 @@
+namespace Ucu.Poo.RolePlayGame
+{
 public class MagicStaff
 {
     // Valor de ataque
@@ -20,4 +22,5 @@ public class MagicStaff
         this.AttackValue = attackValue;
         this.DefenseValue = defenseValue;
     }
+}
 }

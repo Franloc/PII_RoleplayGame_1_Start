@@ -1,3 +1,5 @@
+namespace Ucu.Poo.RolePlayGame
+{
 public class Spell
 {
     private int power;
@@ -10,4 +12,5 @@ public class Spell
     {
         this.Power = power;
     }
+}
 }

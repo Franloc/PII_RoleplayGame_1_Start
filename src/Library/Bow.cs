@@ -1,3 +1,5 @@
+namespace Ucu.Poo.RolePlayGame
+{
 public class Bow
 {
     //Atributos
@@ -21,4 +23,5 @@ public class Bow
         this.attackValue = AV;
         this.defenseValue = DV;
     }
+}
 }

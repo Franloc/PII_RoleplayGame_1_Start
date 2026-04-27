@@ -1,3 +1,5 @@
+namespace Ucu.Poo.RolePlayGame
+{
 public class Axe
 {
     //Valor de ataque del axe
@@ -18,4 +20,5 @@ public class Axe
         this.AttackValue=attackValue;
         this.DefenseValue=defenseValue;
     }
+}
 }

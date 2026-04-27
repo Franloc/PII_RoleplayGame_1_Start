@@ -1,3 +1,5 @@
+namespace Ucu.Poo.RolePlayGame
+{
 class Dwarf
 {
     // Atributos de Dwarf
@@ -102,4 +104,5 @@ class Dwarf
         this.AttackValue=AV; // Attack points
         this.DefenseValue=DV; // Defense points
     }
+}
 }

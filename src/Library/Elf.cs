@@ -1,6 +1,8 @@
 using System;
 using System.Diagnostics;
 
+namespace Ucu.Poo.RolePlayGame
+{
 public class Elf
 {
     //Atributos
@@ -63,7 +65,7 @@ public class Elf
     //Recibir attaque y calcular nuevo valor de vida
     public void ReceiveAttack(int incomingDamage)
     {
-        int damage = incomingDamage - this.GetTotalDefense() //El daño recibido se le descuenta el valor de defensa, por lo que si la defensa es mayor no se recibe daño.
+        int damage = incomingDamage - this.GetTotalDefense();//El daño recibido se le descuenta el valor de defensa, por lo que si la defensa es mayor no se recibe daño.
         if (damage > 0)
         {
             this.Health -= damage;
@@ -120,4 +122,5 @@ public class Elf
         this.attackValue = AV;
         this.defenseValue = DV;
     }
+}
 }

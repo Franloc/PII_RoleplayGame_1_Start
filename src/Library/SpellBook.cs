@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 
+namespace Ucu.Poo.RolePlayGame
+{
 public class SpellBook
 {
     // Lista de hechizos
@@ -28,4 +30,5 @@ public class SpellBook
     {
         get { return 0; }
     }
+}
 }
