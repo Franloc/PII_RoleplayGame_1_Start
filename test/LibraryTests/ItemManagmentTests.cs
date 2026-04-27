@@ -27,11 +27,14 @@ namespace Ucu.Poo.RolePlayGame.Tests
             Assert.AreEqual(null, elfo.Bow);
             Assert.AreEqual(elfo.Sword, null);
 
-            Elf elfo = new Elf("Elden", 100, 20, 10);
-            Bow arco = new Bow(5, 0);
-            elfo.Bow = arco;
-            Assert.AreEqual(arco, elfo.Bow);
-            elfo.RemoveBow();
+            //Wizard Items
+            Wizard gandalf = new Wizard("Gandalf", 100, 10, 0);
+            MagicStaff bastonMagico = new MagicStaff(25, 25);
+            SpellBook libroDeHechizos = new SpellBook()
+            gandalf.Staff = bastonMagico;
+
+            Assert.AreEqual(bastonMagico, gandalf.Staff);
+            gandalf.RemoveStaff();
             Assert.AreEqual(null, elfo.Bow);
             Assert.AreEqual(elfo.Sword, null);
 
