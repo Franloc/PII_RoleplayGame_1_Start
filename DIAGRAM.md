@@ -22,14 +22,14 @@ classDiagram
     Elf "1" --> "1" Armor : has
     Elf "1" --> "1" Sword : has
 
-    %% RelaciÃ³n de SpellsBook con Spell
+    %% Relaciones de SpellsBook con Spell
     SpellsBook "1" --> "*" Spell : contiene
 
     %% Clase Wizard
     class Wizard{
       -string Name
       -SpellsBook SpellsBook
-      -Staff Staff
+      -MagicStaff Staff
       -int BaseHealth
       -int Health
       -int AttackValue
