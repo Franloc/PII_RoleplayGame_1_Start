@@ -35,7 +35,7 @@ classDiagram
       -int AttackValue
       -int DefenseValue
       +Wizard(string WizardName, int basehp, int AV, int DV)
-      +ReceiveAttack(int power)
+      +ReceiveAttack(int incomingDamage)
       +Cure()
       +GetTotalAttack()
       +GetTotalDefense()
