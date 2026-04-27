@@ -18,3 +18,4 @@ public class SpellBookTests
         //Verificar suma de ataque
         Assert.AreEqual(30, libro.AttackValue);
     }
+}
