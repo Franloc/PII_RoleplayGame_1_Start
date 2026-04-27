@@ -16,6 +16,6 @@ public class SpellBookTests
         libro.Spells.Add(hechizo2);
 
         //Verificar suma de ataque
-        Assert.AreEqual(30, libro.AttackValue);
+        Assert.That(libro.AttackValue, Is.EqualTo(30));
     }
 }
