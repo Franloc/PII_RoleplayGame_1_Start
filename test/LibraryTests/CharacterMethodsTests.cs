@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace Ucu.Poo.RolePlayGame.Tests
 {
-    public class TestClass
+    public class CharacterMethodsTests
     {
         [SetUp]
         public void Setup()

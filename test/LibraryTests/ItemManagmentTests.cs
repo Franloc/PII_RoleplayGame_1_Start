@@ -16,10 +16,10 @@ namespace Ucu.Poo.RolePlayGame.Tests
             Bow arco = new Bow(5, 0);
             elfo.Bow = arco;
 
-            Assert.AreEqual(arco, elfo.Bow);
+            Assert.That(arco,Is.EqualTo(elfo.Bow));
             elfo.RemoveBow();
-            Assert.AreEqual(null, elfo.Bow);
-            Assert.AreEqual(null, elfo.Sword);
+            Assert.That(elfo.Bow, Is.EqualTo(null));
+            Assert.That(elfo.Sword, Is.EqualTo(null));
 
             //Dwarf Items
             Dwarf enano = new Dwarf("Enano", 100, 67, 67);
@@ -38,12 +38,10 @@ namespace Ucu.Poo.RolePlayGame.Tests
             gandalf.Staff = bastonMagico;
             gandalf.SpellBook = libroDeHechizos;
 
-            Assert.AreEqual(bastonMagico, gandalf.Staff);
+            Assert.That(bastonMagico, Is.EqualTo(gandalf.Staff));
             gandalf.RemoveStaff();
-            Assert.AreEqual(null, gandalf.Staff);
-            Assert.AreEqual(libroDeHechizos, gandalf.SpellBook);
-
-
+            Assert.That(gandalf.Staff, Is.EqualTo(null));
+            Assert.That(libroDeHechizos, Is.EqualTo(gandalf.SpellBook));
         }
     }
 }
