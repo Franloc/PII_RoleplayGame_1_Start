@@ -69,5 +69,26 @@ namespace Ucu.Poo.RolePlayGame.Tests
             Assert.That(dwarf.Health, Is.EqualTo(100));
         }
 
+        /// <summary>
+        /// Atacar a un personaje con la informacion de otro personaje
+        /// </summary>
+        [Test]
+        public void RecieveAttack_WithTwoCharactersInGame_ReducesHealth()
+        {
+            Dwarf dwarf = new Dwarf("Enzo", 100, 10, 0);
+            Wizard wizard = new Wizard("Cecilia", 100, 10, 5);
+            
+            //Anade Items
+            Helmet casco = new Helmet(0, 15);
+            dwarf.Helmet = casco;
+            wizard.Staff = new MagicStaff(15, 0);
+            SpellBook book = new SpellBook(0);
+            book.Spells.Add(new Spell(20));
+            wizard.SpellBook = book;
+
+            dwarf.ReceiveAttack(wizard.GetTotalAttack());
+            Assert.That(dwarf.Health, Is.EqualTo(70));
+        }
+
     }
 }
